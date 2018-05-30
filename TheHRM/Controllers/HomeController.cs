@@ -25,6 +25,22 @@ namespace TheHRM.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+
+
+        }
+
+        public ActionResult EmployeeLogIn()
+        {
+            ViewBag.Message = "Employee LogIn";
+
+            return View();
+        }
+
+        public ActionResult Employees()
+        {
+            ViewBag.Message = "Employee LogIn";
+
+            return View();
         }
     }
 }
