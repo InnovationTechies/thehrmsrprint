@@ -5,7 +5,6 @@ using System.Web;
 using System.Web.Mvc;
 using TheHRM.Models;
 
-
 namespace TheHRM.Controllers
 {
     public class HomeController : Controller
@@ -49,7 +48,7 @@ namespace TheHRM.Controllers
 
         public ActionResult Leave()
         {
-            return View();
+            return View(db.Set<Leave>());
         }
     }
 }

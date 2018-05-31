@@ -26,12 +26,8 @@
         <th>
             @Html.DisplayNameFor(model => model.Role)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Password)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Pin)
-        </th>
+       
+
         <th></th>
     </tr>
 
@@ -51,12 +47,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Role)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Password)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Pin)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.IDNumber }) |
