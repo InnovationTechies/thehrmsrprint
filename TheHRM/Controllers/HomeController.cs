@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TheHRM.Models;
+
 
 namespace TheHRM.Controllers
 {
     public class HomeController : Controller
     {
+
+        private ModelHRMContainer db = new ModelHRMContainer();
+
+
         public ActionResult Index()
         {
             return View();
@@ -38,9 +44,9 @@ namespace TheHRM.Controllers
 
         public ActionResult Employees()
         {
-            ViewBag.Message = "Employee LogIn";
 
-            return View();
+            return View(db.Employees.ToList());
+
         }
     }
 }
