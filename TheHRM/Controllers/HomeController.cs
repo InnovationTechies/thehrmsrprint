@@ -48,7 +48,16 @@ namespace TheHRM.Controllers
 
         public ActionResult Leave()
         {
-            return View(db.Set<Leave>());
+            TheHRM.Models.Leave leave=new Leave();
+            List<TheHRM.Models.Employee> employee = new List<Employee>();
+            
+
+            ViewData["EmpID"] = new SelectList(employee, "EmpID", "FName");
+
+            ViewData["FName"] = new SelectList(employee, "FName", "EmpID");
+
+
+            return View(leave);
         }
     }
 }
