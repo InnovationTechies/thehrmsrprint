@@ -150,7 +150,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -193,7 +192,6 @@
       <LastGenOutput>ModelHRM.Context.cs</LastGenOutput>
       <DependentUpon>ModelHRM.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\ModelHRM.edmx.sql" />
     <Content Include="Models\ModelHRM.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ModelHRM.cs</LastGenOutput>
@@ -242,11 +240,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\EmployeeLogIn.cshtml" />
     <Content Include="Views\Home\Employees.cshtml" />
-    <Content Include="Views\Employees\Create.cshtml" />
-    <Content Include="Views\Employees\Delete.cshtml" />
-    <Content Include="Views\Employees\Details.cshtml" />
-    <Content Include="Views\Employees\Edit.cshtml" />
-    <Content Include="Views\Employees\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
