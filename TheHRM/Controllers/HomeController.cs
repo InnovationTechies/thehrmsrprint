@@ -50,14 +50,20 @@ namespace TheHRM.Controllers
         {
             TheHRM.Models.Leave leave=new Leave();
             List<TheHRM.Models.Employee> employee = new List<Employee>();
-            
 
             ViewData["EmpID"] = new SelectList(employee, "EmpID", "FName");
-
             ViewData["FName"] = new SelectList(employee, "FName", "EmpID");
-
-
             return View(leave);
+        }
+
+        public ActionResult ViewLeave()
+        {
+
+            ViewBag.Message = "Leaves";
+
+            return View(db.Employees.ToList());
+
+
         }
     }
 }
